@@ -1,8 +1,10 @@
 ﻿# Mile.FFmpeg
 
-[Total Downloads](https://img.shields.io/github/downloads/ProjectMile/Mile.FFmpeg/total)
+![Total Downloads](https://img.shields.io/github/downloads/ProjectMile/Mile.FFmpeg/total)
 [![GitHub Releases](https://img.shields.io/github/v/release/ProjectMile/Mile.FFmpeg?include_prereleases)](https://github.com/ProjectMile/Mile.FFmpeg/releases)
 [![NuGet Package](https://img.shields.io/nuget/vpre/Mile.FFmpeg)](https://www.nuget.org/packages/Mile.FFmpeg)
+
+Mile.FFmpeg is the merged FFmpeg dynamic linked library for the Windows.
 
 ## Features
 
@@ -14,6 +16,10 @@
 - Use [VC-LTL 5.x](https://github.com/Chuyu-Team/VC-LTL5) toolchain to make the
   binary size smaller.
 - Provide NuGet package.
+
+## Usage
+
+You only need to search and add `Mile.FFmpeg` package in your NuGet client.
 
 ## System Requirements
 

@@ -31,7 +31,6 @@
       <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">bz2d.lib;charset.lib;iconv.lib;libmp3lame-static.lib;libmpghip-static.lib;libspeexd.lib;libwebpmuxd.lib;libxml2.lib;lzmad.lib;modplug.lib;ogg.lib;openh264.lib;openjp2.lib;opus.lib;snappyd.lib;soxr.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;webpd.lib;webpdecoderd.lib;webpdemuxd.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)'=='Release'">bz2.lib;charset.lib;iconv.lib;libmp3lame-static.lib;libmpghip-static.lib;libspeex.lib;libwebpmux.lib;libxml2.lib;lzma.lib;modplug.lib;ogg.lib;openh264.lib;openjp2.lib;opus.lib;snappy.lib;soxr.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;webp.lib;webpdecoder.lib;webpdemux.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies>bcrypt.lib;mfplat.lib;mfuuid.lib;secur32.lib;shlwapi.lib;strmiids.lib;vfw32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-
       <!-- <AdditionalDependencies>cfgmgr32.lib;imm32.lib;setupapi.lib;version.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;fontconfig.lib;freetyped.lib;GlU32.Lib;intl.lib;json-c.lib;libexpatdMD.lib;libpng16d.lib;OpenCL.lib;OpenGL32.Lib;pthreadVC3d.lib;pthreadVCE3d.lib;pthreadVSE3d.lib;SDL2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)'=='Release'">brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;fontconfig.lib;freetype.lib;GlU32.Lib;intl.lib;json-c.lib;libexpatMD.lib;libpng16.lib;OpenCL.lib;OpenGL32.Lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies> -->
@@ -49,6 +48,8 @@
   <ItemGroup>
     <None Include="Mile.FFmpeg.ARM.def" />
     <None Include="Mile.FFmpeg.ARM64.def" />
+    <None Include="Mile.FFmpeg.nuspec" />
+    <None Include="Mile.FFmpeg.targets" />
     <None Include="Mile.FFmpeg.Win32.def" />
     <None Include="Mile.FFmpeg.x64.def" />
   </ItemGroup>

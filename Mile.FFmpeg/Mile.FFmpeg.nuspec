@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Mile.FFmpeg</id>
+    <version>4.4.1.0</version>
+    <description>Merged FFmpeg Dynamic Linked Library</description>
+    <authors>Kenji Mouri</authors>
+    <projectUrl>https://github.com/ProjectMile/Mile.FFmpeg</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">LGPL-2.1-or-later</license>
+    <repository type="git" url="https://github.com/ProjectMile/Mile.FFmpeg.git" />
+  </metadata>
+  <files>
+
+    <file src="..\Output\Binaries\Release\Win32\*.dll" target="build\native\Redist\x86"/>
+    <file src="..\Output\Binaries\Release\Win32\*.pdb" target="build\native\Redist\x86"/>
+    <file src="..\Output\Binaries\Release\Win32\*.lib" target="build\native\Lib\x86"/>
+
+    <file src="..\Output\Binaries\Release\x64\*.dll" target="build\native\Redist\x64"/>
+    <file src="..\Output\Binaries\Release\x64\*.pdb" target="build\native\Redist\x64"/>
+    <file src="..\Output\Binaries\Release\x64\*.lib" target="build\native\Lib\x64"/>
+
+    <file src="..\Output\Binaries\Release\ARM\*.dll" target="build\native\Redist\ARM"/>
+    <file src="..\Output\Binaries\Release\ARM\*.pdb" target="build\native\Redist\ARM"/>
+    <file src="..\Output\Binaries\Release\ARM\*.lib" target="build\native\Lib\ARM"/>
+
+    <file src="..\Output\Binaries\Release\ARM64\*.dll" target="build\native\Redist\ARM64"/>
+    <file src="..\Output\Binaries\Release\ARM64\*.pdb" target="build\native\Redist\ARM64"/>
+    <file src="..\Output\Binaries\Release\ARM64\*.lib" target="build\native\Lib\ARM64"/>
+
+    <file src="..\vcpkg\installed\x64-windows-static\include\libavcodec\**\*.h" target="build\native\Include\libavcodec" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libavdevice\**\*.h" target="build\native\Include\libavdevice" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libavfilter\**\*.h" target="build\native\Include\libavfilter" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libavformat\**\*.h" target="build\native\Include\libavformat" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libavresample\**\*.h" target="build\native\Include\libavresample" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libavutil\**\*.h" target="build\native\Include\libavutil" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libswresample\**\*.h" target="build\native\Include\libswresample" />
+    <file src="..\vcpkg\installed\x64-windows-static\include\libswscale\**\*.h" target="build\native\Include\libswscale" />
+
+    <file src="Mile.FFmpeg.targets" target="build\native"/>
+
+  </files>
+</package>

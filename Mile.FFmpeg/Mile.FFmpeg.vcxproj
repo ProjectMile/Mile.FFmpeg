@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.Win32.props" />
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.x64.props" />
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.ARM.props" />
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.ARM64.props" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{360A29AE-EDF8-4F58-A13C-878316CBDE13}</ProjectGuid>
+    <RootNamespace>Mile.FFmpeg</RootNamespace>
+    <MileProjectType>DynamicLibrary</MileProjectType>
+  </PropertyGroup>
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.props" />
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Runtime.VC-LTL.props" />
+  <PropertyGroup>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\vcpkg\installed\arm-windows-static\debug\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">..\vcpkg\installed\arm-windows-static\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">..\vcpkg\installed\arm64-windows-static\debug\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">..\vcpkg\installed\arm64-windows-static\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\vcpkg\installed\x64-windows-static\debug\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\vcpkg\installed\x64-windows-static\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\vcpkg\installed\x86-windows-static\debug\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\vcpkg\installed\x86-windows-static\lib;$(VC_LTL_Library);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>bcrypt.lib;cfgmgr32.lib;imm32.lib;mfplat.lib;mfuuid.lib;secur32.lib;setupapi.lib;shlwapi.lib;strmiids.lib;version.lib;vfw32.lib;winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avresample.lib;avutil.lib;brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;bz2d.lib;charset.lib;fontconfig.lib;freetyped.lib;GlU32.Lib;iconv.lib;intl.lib;json-c.lib;libexpatdMD.lib;libmp3lame-static.lib;libmpghip-static.lib;libpng16d.lib;libspeexd.lib;libwebpmuxd.lib;libxml2.lib;lzmad.lib;modplug.lib;ogg.lib;OpenCL.lib;OpenGL32.Lib;openh264.lib;openjp2.lib;opus.lib;pthreadVC3d.lib;pthreadVCE3d.lib;pthreadVSE3d.lib;SDL2d.lib;snappyd.lib;soxr.lib;swresample.lib;swscale.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;webpd.lib;webpdecoderd.lib;webpdemuxd.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avresample.lib;avutil.lib;brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;bz2.lib;charset.lib;fontconfig.lib;freetype.lib;GlU32.Lib;iconv.lib;intl.lib;json-c.lib;libexpatMD.lib;libmp3lame-static.lib;libmpghip-static.lib;libpng16.lib;libspeex.lib;libwebpmux.lib;libxml2.lib;lzma.lib;modplug.lib;ogg.lib;OpenCL.lib;OpenGL32.Lib;openh264.lib;openjp2.lib;opus.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;SDL2.lib;snappy.lib;soxr.lib;swresample.lib;swscale.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;webp.lib;webpdecoder.lib;webpdemux.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Mile.FFmpeg.$(Platform).def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Mile.Project.Properties.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mile.FFmpeg.ARM.def" />
+    <None Include="Mile.FFmpeg.ARM64.def" />
+    <None Include="Mile.FFmpeg.Win32.def" />
+    <None Include="Mile.FFmpeg.x64.def" />
+  </ItemGroup>
+  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.targets" />
+</Project>

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:   Mouri Internal Library Essentials
+  FILE:      Mile.FFmpeg.nuspec
+  PURPOSE:   NuGet package definition for Mile.FFmpeg
+
+  LICENSE:   The MIT License
+
+  DEVELOPER: Mouri_Naruto (Mouri_Naruto AT Outlook.com)
+-->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mile.FFmpeg</id>
@@ -12,21 +21,37 @@
   </metadata>
   <files>
 
-    <file src="..\Output\Binaries\Release\Win32\*.dll" target="build\native\Redist\x86"/>
-    <file src="..\Output\Binaries\Release\Win32\*.pdb" target="build\native\Redist\x86"/>
-    <file src="..\Output\Binaries\Release\Win32\*.lib" target="build\native\Lib\x86"/>
+    <file src="..\Output\Binaries\Debug\Win32\*.dll" target="build\native\Redist\x86\Debug"/>
+    <file src="..\Output\Binaries\Debug\Win32\*.pdb" target="build\native\Redist\x86\Debug"/>
+    <file src="..\Output\Binaries\Debug\Win32\*.lib" target="build\native\Lib\x86\Debug"/>
 
-    <file src="..\Output\Binaries\Release\x64\*.dll" target="build\native\Redist\x64"/>
-    <file src="..\Output\Binaries\Release\x64\*.pdb" target="build\native\Redist\x64"/>
-    <file src="..\Output\Binaries\Release\x64\*.lib" target="build\native\Lib\x64"/>
+    <file src="..\Output\Binaries\Debug\x64\*.dll" target="build\native\Redist\x64\Debug"/>
+    <file src="..\Output\Binaries\Debug\x64\*.pdb" target="build\native\Redist\x64\Debug"/>
+    <file src="..\Output\Binaries\Debug\x64\*.lib" target="build\native\Lib\x64\Debug"/>
 
-    <file src="..\Output\Binaries\Release\ARM\*.dll" target="build\native\Redist\ARM"/>
-    <file src="..\Output\Binaries\Release\ARM\*.pdb" target="build\native\Redist\ARM"/>
-    <file src="..\Output\Binaries\Release\ARM\*.lib" target="build\native\Lib\ARM"/>
+    <file src="..\Output\Binaries\Debug\ARM\*.dll" target="build\native\Redist\ARM\Debug"/>
+    <file src="..\Output\Binaries\Debug\ARM\*.pdb" target="build\native\Redist\ARM\Debug"/>
+    <file src="..\Output\Binaries\Debug\ARM\*.lib" target="build\native\Lib\ARM\Debug"/>
 
-    <file src="..\Output\Binaries\Release\ARM64\*.dll" target="build\native\Redist\ARM64"/>
-    <file src="..\Output\Binaries\Release\ARM64\*.pdb" target="build\native\Redist\ARM64"/>
-    <file src="..\Output\Binaries\Release\ARM64\*.lib" target="build\native\Lib\ARM64"/>
+    <file src="..\Output\Binaries\Debug\ARM64\*.dll" target="build\native\Redist\ARM64\Debug"/>
+    <file src="..\Output\Binaries\Debug\ARM64\*.pdb" target="build\native\Redist\ARM64\Debug"/>
+    <file src="..\Output\Binaries\Debug\ARM64\*.lib" target="build\native\Lib\ARM64\Debug"/>
+
+    <file src="..\Output\Binaries\Release\Win32\*.dll" target="build\native\Redist\x86\Release"/>
+    <file src="..\Output\Binaries\Release\Win32\*.pdb" target="build\native\Redist\x86\Release"/>
+    <file src="..\Output\Binaries\Release\Win32\*.lib" target="build\native\Lib\x86\Release"/>
+
+    <file src="..\Output\Binaries\Release\x64\*.dll" target="build\native\Redist\x64\Release"/>
+    <file src="..\Output\Binaries\Release\x64\*.pdb" target="build\native\Redist\x64\Release"/>
+    <file src="..\Output\Binaries\Release\x64\*.lib" target="build\native\Lib\x64\Release"/>
+
+    <file src="..\Output\Binaries\Release\ARM\*.dll" target="build\native\Redist\ARM\Release"/>
+    <file src="..\Output\Binaries\Release\ARM\*.pdb" target="build\native\Redist\ARM\Release"/>
+    <file src="..\Output\Binaries\Release\ARM\*.lib" target="build\native\Lib\ARM\Release"/>
+
+    <file src="..\Output\Binaries\Release\ARM64\*.dll" target="build\native\Redist\ARM64\Release"/>
+    <file src="..\Output\Binaries\Release\ARM64\*.pdb" target="build\native\Redist\ARM64\Release"/>
+    <file src="..\Output\Binaries\Release\ARM64\*.lib" target="build\native\Lib\ARM64\Release"/>
 
     <file src="..\vcpkg\installed\x64-windows-static\include\libavcodec\**\*.h" target="build\native\Include\libavcodec" />
     <file src="..\vcpkg\installed\x64-windows-static\include\libavdevice\**\*.h" target="build\native\Include\libavdevice" />

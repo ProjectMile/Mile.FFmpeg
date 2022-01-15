@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:   Mouri Internal Library Essentials
+  FILE:      Mile.FFmpeg.targets
+  PURPOSE:   MSBuild targets file for Mile.FFmpeg
+
+  LICENSE:   The MIT License
+
+  DEVELOPER: Mouri_Naruto (Mouri_Naruto AT Outlook.com)
+-->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MileFFmpegIncludePath>$(MSBuildThisFileDirectory)Include\</MileFFmpegIncludePath>
+    <MileFFmpegLibraryPath Condition="'$(UseDebugLibraries)' == 'true'">$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\Debug\</MileFFmpegLibraryPath>
+    <MileFFmpegLibraryPath Condition="'$(UseDebugLibraries)' != 'true'">$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\Release\</MileFFmpegLibraryPath>
+    <MileFFmpegRedistPath Condition="'$(UseDebugLibraries)' == 'true'">$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\Debug\</MileFFmpegRedistPath>
+    <MileFFmpegRedistPath Condition="'$(UseDebugLibraries)' != 'true'">$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\Release\</MileFFmpegRedistPath>
+  </PropertyGroup>
   <ItemGroup>
-    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\*.*" />
+    <ReferenceCopyLocalPaths Include="$(MileFFmpegRedistPath)*.*" />
   </ItemGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MileFFmpegIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MileFFmpegIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\Mile.FFmpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(MileFFmpegLibraryPath)Mile.FFmpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 </Project>

@@ -4,7 +4,6 @@
 
 - Fix issue which you can't use Mile.FFmpeg.
 - Integrate fontconfig and freetype support.
-- Add debug libraries in the NuGet package.
 - Add documents for the whole project.
 
 **Mile.FFmpeg 4.4.1.0**

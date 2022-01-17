@@ -11,10 +11,8 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MileFFmpegIncludePath>$(MSBuildThisFileDirectory)Include\</MileFFmpegIncludePath>
-    <MileFFmpegLibraryPath Condition="'$(UseDebugLibraries)' == 'true'">$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\Debug\</MileFFmpegLibraryPath>
-    <MileFFmpegLibraryPath Condition="'$(UseDebugLibraries)' != 'true'">$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\Release\</MileFFmpegLibraryPath>
-    <MileFFmpegRedistPath Condition="'$(UseDebugLibraries)' == 'true'">$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\Debug\</MileFFmpegRedistPath>
-    <MileFFmpegRedistPath Condition="'$(UseDebugLibraries)' != 'true'">$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\Release\</MileFFmpegRedistPath>
+    <MileFFmpegLibraryPath>$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\</MileFFmpegLibraryPath>
+    <MileFFmpegRedistPath>$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\</MileFFmpegRedistPath>
   </PropertyGroup>
   <ItemGroup>
     <ReferenceCopyLocalPaths Include="$(MileFFmpegRedistPath)*.*" />

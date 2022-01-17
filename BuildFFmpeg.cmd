@@ -15,7 +15,7 @@ rem Change to the current folder.
 cd "%~dp0vcpkg"
 
 rem Bootstrap vcpkg
-rem call bootstrap-vcpkg.bat
+call bootstrap-vcpkg.bat
 
 rem Set features list
 set FFmpegFeatures=avcodec,avdevice,avfilter,avformat,avresample,bzip2

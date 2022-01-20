@@ -12,7 +12,7 @@
 @echo off
 
 rem Change to the current folder.
-cd "%~dp0vcpkg"
+cd "%~dp0Mile.FFmpeg.Vcpkg"
 
 rem Bootstrap vcpkg
 call bootstrap-vcpkg.bat

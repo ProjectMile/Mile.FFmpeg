@@ -12,20 +12,15 @@
   <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.props" />
   <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Runtime.VC-LTL.props" />
   <PropertyGroup>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\Mile.FFmpeg.Vcpkg\installed\arm-windows-static\debug\lib;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">..\Mile.FFmpeg.Vcpkg\installed\arm-windows-static\lib;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">..\Mile.FFmpeg.Vcpkg\installed\arm64-windows-static\debug\lib;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">..\Mile.FFmpeg.Vcpkg\installed\arm64-windows-static\lib;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\debug\lib;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\lib;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Mile.FFmpeg.Vcpkg\installed\x86-windows-static\debug\lib;$$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Mile.FFmpeg.Vcpkg\installed\x86-windows-static\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='ARM'">..\Mile.FFmpeg.Vcpkg\installed\arm-windows-static\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='ARM64'">..\Mile.FFmpeg.Vcpkg\installed\arm64-windows-static\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='x64'">..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Platform)'=='Win32'">..\Mile.FFmpeg.Vcpkg\installed\x86-windows-static\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avresample.lib;avutil.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;bz2d.lib;charset.lib;fontconfig.lib;freetyped.lib;iconv.lib;intl.lib;json-c.lib;libexpatdMD.lib;libmp3lame-static.lib;libmpghip-static.lib;libpng16d.lib;libspeexd.lib;libwebpmuxd.lib;libxml2.lib;lzmad.lib;modplug.lib;ogg.lib;openh264.lib;openjp2.lib;opus.lib;pthreadVC3d.lib;pthreadVCE3d.lib;pthreadVSE3d.lib;snappyd.lib;soxr.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;webpd.lib;webpdecoderd.lib;webpdemuxd.lib;zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;bz2.lib;charset.lib;fontconfig.lib;freetype.lib;iconv.lib;intl.lib;json-c.lib;libexpatMD.lib;libmp3lame-static.lib;libmpghip-static.lib;libpng16.lib;libspeex.lib;libwebpmux.lib;libxml2.lib;lzma.lib;modplug.lib;ogg.lib;openh264.lib;openjp2.lib;opus.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;snappy.lib;soxr.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;webp.lib;webpdecoder.lib;webpdemux.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;bz2.lib;charset.lib;dav1d.lib;fontconfig.lib;freetype.lib;iconv.lib;intl.lib;json-c.lib;libexpatMD.lib;libmp3lame-static.lib;libmpghip-static.lib;libpng16.lib;libspeex.lib;libwebpmux.lib;libxml2.lib;lzma.lib;mbedcrypto.lib;mbedtls.lib;mbedx509.lib;modplug.lib;ogg.lib;openh264.lib;openjp2.lib;opus.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;snappy.lib;soxr.lib;srt_static.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;vpx.lib;webp.lib;webpdecoder.lib;webpdemux.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies>bcrypt.lib;mfplat.lib;mfuuid.lib;secur32.lib;shlwapi.lib;strmiids.lib;vfw32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>Mile.FFmpeg.$(Platform).def</ModuleDefinitionFile>
     </Link>

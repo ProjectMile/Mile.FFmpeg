@@ -18,12 +18,11 @@ rem Bootstrap vcpkg
 call bootstrap-vcpkg.bat
 
 rem Set features list
-set FFmpegFeatures=avcodec,avdevice,avfilter,avformat,avresample,bzip2
-set FFmpegFeatures=%FFmpegFeatures%,fontconfig,freetype,iconv,lzma,modplug
-set FFmpegFeatures=%FFmpegFeatures%,mp3lame,openh264,openjpeg,snappy,soxr
-set FFmpegFeatures=%FFmpegFeatures%,speex,opus,swresample,swscale,theora
-set FFmpegFeatures=%FFmpegFeatures%,vorbis,webp,xml2,zlib
-set FFmpegFeatures=%FFmpegFeatures%,dav1d,srt,vpx
+set FFmpegFeatures=avcodec,avdevice,avfilter,avformat,bzip2,dav1d,fontconfig
+set FFmpegFeatures=%FFmpegFeatures%,freetype,iconv,lzma,modplug,mp3lame
+set FFmpegFeatures=%FFmpegFeatures%,openh264,openjpeg,snappy,soxr,speex,opus
+set FFmpegFeatures=%FFmpegFeatures%,srt,swresample,swscale,theora,vorbis,vpx
+set FFmpegFeatures=%FFmpegFeatures%,webp,xml2,zlib
 rem ,sdl2,opencl
 rem NotAvailableInAllPlatform alsa,aom,ass,fribidi,ilbc,nvcodec,opengl,ssh,tensorflow,tesseract
 

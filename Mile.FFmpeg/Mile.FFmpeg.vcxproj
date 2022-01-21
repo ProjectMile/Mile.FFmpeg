@@ -8,6 +8,7 @@
     <ProjectGuid>{360A29AE-EDF8-4F58-A13C-878316CBDE13}</ProjectGuid>
     <RootNamespace>Mile.FFmpeg</RootNamespace>
     <MileProjectType>DynamicLibrary</MileProjectType>
+    <CleanImport>true</CleanImport>
   </PropertyGroup>
   <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.props" />
   <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Runtime.VC-LTL.props" />
@@ -19,7 +20,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avresample.lib;avutil.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies>brotlicommon-static.lib;brotlidec-static.lib;brotlienc-static.lib;bz2.lib;charset.lib;dav1d.lib;fontconfig.lib;freetype.lib;iconv.lib;intl.lib;json-c.lib;libexpatMD.lib;libmp3lame-static.lib;libmpghip-static.lib;libpng16.lib;libspeex.lib;libwebpmux.lib;libxml2.lib;lzma.lib;mbedcrypto.lib;mbedtls.lib;mbedx509.lib;modplug.lib;ogg.lib;openh264.lib;openjp2.lib;opus.lib;pthreadVC3.lib;pthreadVCE3.lib;pthreadVSE3.lib;snappy.lib;soxr.lib;srt_static.lib;theora.lib;theoradec.lib;theoraenc.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;vpx.lib;webp.lib;webpdecoder.lib;webpdemux.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies>bcrypt.lib;mfplat.lib;mfuuid.lib;secur32.lib;shlwapi.lib;strmiids.lib;vfw32.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>Mile.FFmpeg.$(Platform).def</ModuleDefinitionFile>

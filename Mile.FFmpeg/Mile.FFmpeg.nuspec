@@ -11,7 +11,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mile.FFmpeg</id>
-    <version>4.4.1.1</version>
+    <version>5.0.0.0</version>
     <description>Merged FFmpeg Dynamic Linked Library</description>
     <authors>Kenji Mouri</authors>
     <projectUrl>https://github.com/ProjectMile/Mile.FFmpeg</projectUrl>
@@ -41,7 +41,6 @@
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavdevice\**\*.h" target="build\native\Include\libavdevice" />
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavfilter\**\*.h" target="build\native\Include\libavfilter" />
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavformat\**\*.h" target="build\native\Include\libavformat" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavresample\**\*.h" target="build\native\Include\libavresample" />
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavutil\**\*.h" target="build\native\Include\libavutil" />
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libswresample\**\*.h" target="build\native\Include\libswresample" />
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libswscale\**\*.h" target="build\native\Include\libswscale" />

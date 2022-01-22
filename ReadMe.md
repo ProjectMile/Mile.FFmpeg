@@ -10,8 +10,8 @@ Mile.FFmpeg is the merged FFmpeg dynamic linked library for the Windows.
 
 - Based on the latest FFmpeg source code tree from vcpkg.
 - Compile FFmpeg and related third-party libraries via vcpkg with avcodec, 
-  avdevice, avfilter, avformat, avresample, bzip2, dav1d, fontconfig, freetype,
-  iconv, lzma, modplug, mp3lame, openh264, openjpeg, opus, snappy, soxr, speex,
+  avdevice, avfilter, avformat, bzip2, dav1d, fontconfig, freetype, iconv, 
+  lzma, modplug, mp3lame, openh264, openjpeg, opus, snappy, soxr, speex, 
   srt, swresample, swscale, theora, vorbis, vpx, webp, xml2 and zlib enabled.
 - Use [VC-LTL 5.x](https://github.com/Chuyu-Team/VC-LTL5) toolchain to make the
   binary size smaller.
@@ -28,5 +28,5 @@ You only need to search and add `Mile.FFmpeg` package in your NuGet client.
 
 ## Documents
 
-- [License](License.md)
-- [Release Notes](ReleaseNotes.md)
+- [License](https://github.com/ProjectMile/Mile.FFmpeg/blob/main/License.md)
+- [Release Notes](https://github.com/ProjectMile/Mile.FFmpeg/blob/main/ReleaseNotes.md)

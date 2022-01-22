@@ -16,25 +16,22 @@
     <authors>Kenji Mouri</authors>
     <projectUrl>https://github.com/ProjectMile/Mile.FFmpeg</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">LGPL-2.1-or-later</license>
+    <license type="file">build\native\License.md</license>
+    <readme>build\native\ReadMe.md</readme>
     <repository type="git" url="https://github.com/ProjectMile/Mile.FFmpeg.git" />
   </metadata>
   <files>
 
     <file src="..\Output\Binaries\Release\Win32\*.dll" target="build\native\Redist\x86"/>
-    <file src="..\Output\Binaries\Release\Win32\*.pdb" target="build\native\Redist\x86"/>
     <file src="..\Output\Binaries\Release\Win32\*.lib" target="build\native\Lib\x86"/>
 
     <file src="..\Output\Binaries\Release\x64\*.dll" target="build\native\Redist\x64"/>
-    <file src="..\Output\Binaries\Release\x64\*.pdb" target="build\native\Redist\x64"/>
     <file src="..\Output\Binaries\Release\x64\*.lib" target="build\native\Lib\x64"/>
 
     <file src="..\Output\Binaries\Release\ARM\*.dll" target="build\native\Redist\ARM"/>
-    <file src="..\Output\Binaries\Release\ARM\*.pdb" target="build\native\Redist\ARM"/>
     <file src="..\Output\Binaries\Release\ARM\*.lib" target="build\native\Lib\ARM"/>
 
     <file src="..\Output\Binaries\Release\ARM64\*.dll" target="build\native\Redist\ARM64"/>
-    <file src="..\Output\Binaries\Release\ARM64\*.pdb" target="build\native\Redist\ARM64"/>
     <file src="..\Output\Binaries\Release\ARM64\*.lib" target="build\native\Lib\ARM64"/>
 
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavcodec\**\*.h" target="build\native\Include\libavcodec" />
@@ -46,6 +43,10 @@
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libswscale\**\*.h" target="build\native\Include\libswscale" />
 
     <file src="Mile.FFmpeg.targets" target="build\native"/>
+
+    <file src="..\ReadMe.md" target="build\native"/>
+    <file src="..\License.md" target="build\native"/>
+    <file src="..\ReleaseNotes.md" target="build\native"/>
 
   </files>
 </package>

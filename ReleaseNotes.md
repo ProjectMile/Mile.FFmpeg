@@ -1,5 +1,11 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 5.0.0.0**
+
+- Upgrade FFmpeg to 5.0.
+- Migrate from vcpkg to Mile.FFmpeg.Vcpkg.
+- Integrate dav1d, srt and vpx support.
+
 **Mile.FFmpeg 4.4.1.1**
 
 - Fix issue which you can't use Mile.FFmpeg.

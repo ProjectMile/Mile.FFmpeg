@@ -19,7 +19,10 @@ Mile.FFmpeg is the merged FFmpeg dynamic linked library for the Windows.
 
 ## Usage
 
-You only need to search and add `Mile.FFmpeg` package in your NuGet client.
+You only need to search and add `Mile.FFmpeg` package in your NuGet client or 
+download packages in 
+[GitHub Releases](https://github.com/ProjectMile/Mile.FFmpeg/releases) if you
+don't want to use NuGet package manager.
 
 ## System Requirements
 

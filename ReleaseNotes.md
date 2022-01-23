@@ -1,5 +1,10 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 5.0.0.1**
+
+- Split the symbol files to standalone package.
+- Integrate aom and ilbc support.
+
 **Mile.FFmpeg 5.0.0.0**
 
 - Upgrade FFmpeg to 5.0.

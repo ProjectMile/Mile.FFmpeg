@@ -1,5 +1,9 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 5.0.0.2**
+
+- Integrate ass and fribidi support.
+
 **Mile.FFmpeg 5.0.0.1**
 
 - Split the symbol files to standalone package.

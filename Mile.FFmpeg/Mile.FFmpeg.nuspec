@@ -11,7 +11,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mile.FFmpeg</id>
-    <version>5.0.0.1</version>
+    <version>5.0.0.2</version>
     <description>Merged FFmpeg Dynamic Linked Library</description>
     <authors>Kenji Mouri</authors>
     <projectUrl>https://github.com/ProjectMile/Mile.FFmpeg</projectUrl>

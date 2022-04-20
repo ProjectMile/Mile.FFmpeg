@@ -1,5 +1,9 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 5.0.1.0**
+
+- Upgrade FFmpeg to 5.0.1.
+
 **Mile.FFmpeg 5.0.0.2**
 
 - Integrate ass and fribidi support.

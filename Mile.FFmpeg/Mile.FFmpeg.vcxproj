@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.Win32.props" />
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.x64.props" />
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.ARM.props" />
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Platform.ARM64.props" />
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x86.props" />
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x64.props" />
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.ARM.props" />
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.ARM64.props" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>{360A29AE-EDF8-4F58-A13C-878316CBDE13}</ProjectGuid>
     <RootNamespace>Mile.FFmpeg</RootNamespace>
     <MileProjectType>DynamicLibrary</MileProjectType>
-    <CleanImport>true</CleanImport>
+    <MileProjectEnableVCLTLSupport>true</MileProjectEnableVCLTLSupport>
   </PropertyGroup>
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.props" />
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.Runtime.VC-LTL.props" />
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.props" />
   <PropertyGroup>
     <LibraryPath Condition="'$(Platform)'=='ARM'">..\Mile.FFmpeg.Vcpkg\installed\arm-windows-static\lib;$(LibraryPath)</LibraryPath>
     <LibraryPath Condition="'$(Platform)'=='ARM64'">..\Mile.FFmpeg.Vcpkg\installed\arm64-windows-static\lib;$(LibraryPath)</LibraryPath>
@@ -37,5 +36,5 @@
     <None Include="Mile.FFmpeg.Win32.def" />
     <None Include="Mile.FFmpeg.x64.def" />
   </ItemGroup>
-  <Import Project="..\Mile.Cpp\Mile.Project\Mile.Project.targets" />
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
 </Project>

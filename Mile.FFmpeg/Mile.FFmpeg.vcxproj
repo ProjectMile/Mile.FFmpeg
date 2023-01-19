@@ -9,6 +9,15 @@
     <RootNamespace>Mile.FFmpeg</RootNamespace>
     <MileProjectType>DynamicLibrary</MileProjectType>
     <MileProjectEnableVCLTLSupport>true</MileProjectEnableVCLTLSupport>
+    <MileProjectUseProjectProperties>true</MileProjectUseProjectProperties>
+    <MileProjectCompanyName>Project Mile</MileProjectCompanyName>
+    <MileProjectFileDescription>Merged FFmpeg Dynamic Linked Library</MileProjectFileDescription>
+    <MileProjectInternalName>Mile.FFmpeg</MileProjectInternalName>
+    <MileProjectLegalCopyright>© Project Mile. All rights reserved.</MileProjectLegalCopyright>
+    <MileProjectOriginalFilename>Mile.FFmpeg.dll</MileProjectOriginalFilename>
+    <MileProjectProductName>Mile.FFmpeg</MileProjectProductName>
+    <MileProjectVersion>5.0.1.0</MileProjectVersion>
+    <MileProjectVersionTag Condition="false">Alpha 1</MileProjectVersionTag>
   </PropertyGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.props" />
   <PropertyGroup>
@@ -25,9 +34,6 @@
       <ModuleDefinitionFile>Mile.FFmpeg.$(Platform).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Mile.Project.Properties.h" />
-  </ItemGroup>
   <ItemGroup>
     <None Include="Mile.FFmpeg.ARM.def" />
     <None Include="Mile.FFmpeg.ARM64.def" />

@@ -19,6 +19,7 @@
     <MileProjectVersion>5.0.1.0</MileProjectVersion>
     <MileProjectVersionTag Condition="false">Alpha 1</MileProjectVersionTag>
   </PropertyGroup>
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.Default.props" />
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.props" />
   <PropertyGroup>
     <LibraryPath Condition="'$(Platform)'=='ARM'">..\Mile.FFmpeg.Vcpkg\installed\arm-windows-static\lib;$(LibraryPath)</LibraryPath>

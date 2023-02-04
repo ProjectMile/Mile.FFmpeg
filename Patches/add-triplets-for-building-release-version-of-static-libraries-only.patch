@@ -6,13 +6,9 @@ Subject: [PATCH] Add triplets for building release version of static libraries
 
 ---
  triplets/community/arm-windows-static-release.cmake   | 4 ++++
- triplets/community/arm64-windows-static-release.cmake | 4 ++++
- triplets/community/x64-windows-static-release.cmake   | 4 ++++
  triplets/community/x86-windows-static-release.cmake   | 4 ++++
  4 files changed, 16 insertions(+)
  create mode 100644 triplets/community/arm-windows-static-release.cmake
- create mode 100644 triplets/community/arm64-windows-static-release.cmake
- create mode 100644 triplets/community/x64-windows-static-release.cmake
  create mode 100644 triplets/community/x86-windows-static-release.cmake
 
 diff --git a/triplets/community/arm-windows-static-release.cmake b/triplets/community/arm-windows-static-release.cmake
@@ -22,26 +18,6 @@ index 000000000..d38cc524f
 +++ b/triplets/community/arm-windows-static-release.cmake
 @@ -0,0 +1,4 @@
 +set(VCPKG_TARGET_ARCHITECTURE arm)
-+set(VCPKG_CRT_LINKAGE static)
-+set(VCPKG_LIBRARY_LINKAGE static)
-+set(VCPKG_BUILD_TYPE release)
-diff --git a/triplets/community/arm64-windows-static-release.cmake b/triplets/community/arm64-windows-static-release.cmake
-new file mode 100644
-index 000000000..e6eb810f2
---- /dev/null
-+++ b/triplets/community/arm64-windows-static-release.cmake
-@@ -0,0 +1,4 @@
-+set(VCPKG_TARGET_ARCHITECTURE arm64)
-+set(VCPKG_CRT_LINKAGE static)
-+set(VCPKG_LIBRARY_LINKAGE static)
-+set(VCPKG_BUILD_TYPE release)
-diff --git a/triplets/community/x64-windows-static-release.cmake b/triplets/community/x64-windows-static-release.cmake
-new file mode 100644
-index 000000000..f904bd32a
---- /dev/null
-+++ b/triplets/community/x64-windows-static-release.cmake
-@@ -0,0 +1,4 @@
-+set(VCPKG_TARGET_ARCHITECTURE x64)
 +set(VCPKG_CRT_LINKAGE static)
 +set(VCPKG_LIBRARY_LINKAGE static)
 +set(VCPKG_BUILD_TYPE release)

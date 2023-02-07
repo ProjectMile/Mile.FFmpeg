@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
   PROJECT:   Mouri Internal Library Essentials
   FILE:      Mile.FFmpeg.nuspec
@@ -34,13 +34,13 @@
     <file src="..\Output\Binaries\Release\ARM64\*.dll" target="build\native\Redist\ARM64"/>
     <file src="..\Output\Binaries\Release\ARM64\*.lib" target="build\native\Lib\ARM64"/>
 
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavcodec\**\*.h" target="build\native\Include\libavcodec" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavdevice\**\*.h" target="build\native\Include\libavdevice" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavfilter\**\*.h" target="build\native\Include\libavfilter" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavformat\**\*.h" target="build\native\Include\libavformat" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libavutil\**\*.h" target="build\native\Include\libavutil" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libswresample\**\*.h" target="build\native\Include\libswresample" />
-    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static\include\libswscale\**\*.h" target="build\native\Include\libswscale" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libavcodec\**\*.h" target="build\native\Include\libavcodec" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libavdevice\**\*.h" target="build\native\Include\libavdevice" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libavfilter\**\*.h" target="build\native\Include\libavfilter" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libavformat\**\*.h" target="build\native\Include\libavformat" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libavutil\**\*.h" target="build\native\Include\libavutil" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libswresample\**\*.h" target="build\native\Include\libswresample" />
+    <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libswscale\**\*.h" target="build\native\Include\libswscale" />
 
     <file src="Mile.FFmpeg.targets" target="build\native"/>
 

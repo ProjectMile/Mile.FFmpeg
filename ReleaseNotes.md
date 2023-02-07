@@ -1,5 +1,11 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 5.1.2.0**
+
+- Upgrade FFmpeg to 5.1.2.
+- Start to use mainline vcpkg as Mile.FFmpeg.Vcpkg submodule.
+- Update to Git submodule version of Mile.Project.Windows.
+
 **Mile.FFmpeg 5.0.1.0**
 
 - Upgrade FFmpeg to 5.0.1.

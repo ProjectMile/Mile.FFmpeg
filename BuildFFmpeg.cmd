@@ -29,14 +29,16 @@ rem NotAvailableInAllPlatform alsa,nvcodec,opengl,ssh,tensorflow,tesseract
 rem OBS Studio nvenc,amf,libx264 
 rem K-Lite w32threads,libopencore-amrnb,libopencore-amrwb,avisynth,gnutls,gmp
 
+set VcpkgOptions= --overlay-triplets=..\Mile.FFmpeg.Vcpkg.ExtraTriplets
+
 rem Build FFmpeg via vcpkg
-vcpkg install ffmpeg[%FFmpegFeatures%]:x86-windows-static-release
+vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:x86-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
-vcpkg install ffmpeg[%FFmpegFeatures%]:x64-windows-static-release
+vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:x64-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
-vcpkg install ffmpeg[%FFmpegFeatures%]:arm-windows-static-release
+vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:arm-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
-vcpkg install ffmpeg[%FFmpegFeatures%]:arm64-windows-static-release
+vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:arm64-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 
 @endlocal

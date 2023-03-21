@@ -20,9 +20,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <!-- <PackagingProjectReference Include="$(MSBuildThisFileDirectory)Mile.Project.Windows\Mile.Project.NuGetPackaging.proj">
-      <AdditionalProperties>NuspecFile=$(MSBuildThisFileDirectory)SampleProject\SampleProject.nuspec</AdditionalProperties>   
-    </PackagingProjectReference> -->
+    <PackagingProjectReference Include="$(MSBuildThisFileDirectory)Mile.Project.Windows\Mile.Project.NuGetPackaging.proj">
+      <AdditionalProperties>NuspecFile=$(MSBuildThisFileDirectory)Mile.FFmpeg\Mile.FFmpeg.nuspec</AdditionalProperties>   
+    </PackagingProjectReference>
   </ItemGroup>
   <Target Name="Restore" >
     <MSBuild

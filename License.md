@@ -564,3 +564,9 @@ necessary.  Here is a sample; alter the names:
 
 That's all there is to it!
 ```
+
+### The third-party libraries used in Mile.FFmpeg
+
+- Mile.Project.Windows, https://github.com/ProjectMile/Mile.Project.Windows
+- VC-LTL, https://github.com/Chuyu-Team/VC-LTL5
+- vcpkg, https://github.com/microsoft/vcpkg

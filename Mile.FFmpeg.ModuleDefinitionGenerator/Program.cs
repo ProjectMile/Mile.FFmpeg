@@ -1,40 +1,10 @@
-﻿using System.Diagnostics;
+﻿using Mile.Project.Helpers;
 using System.Text;
 
 namespace Mile.FFmpeg.ModuleDefinitionGenerator
 {
     internal class Program
     {
-        public static string GetRepositoryRoot()
-        {
-            Process process = new Process
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    CreateNoWindow = true,
-                    UseShellExecute = false,
-                    RedirectStandardOutput = true,
-                    FileName = "git.exe",
-                    Arguments = "rev-parse --show-toplevel"
-                }
-            };
-
-            if (process.Start())
-            {
-                process.WaitForExit();
-                if (process.ExitCode == 0)
-                {
-                    string? result = process.StandardOutput.ReadLine();
-                    if (result != null)
-                    {
-                        return Path.GetFullPath(result);
-                    }
-                }
-            }
-
-            return string.Empty;
-        }
-
         const int ImageArchiveStartSize = 8;
         const string ImageArchiveStart = "!<arch>\n";
         const string ImageArchiveEnd = "`\n";
@@ -152,7 +122,7 @@ namespace Mile.FFmpeg.ModuleDefinitionGenerator
 
         static void Main(string[] args)
         {
-            string ProjectRootPath = GetRepositoryRoot();
+            string ProjectRootPath = GitRepository.GetRootPath();
 
             Console.WriteLine(ProjectRootPath);
 

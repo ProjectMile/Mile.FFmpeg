@@ -189,10 +189,7 @@ namespace Mile.FFmpeg.ModuleDefinitionGenerator
                     Result += Symbol + "\r\n";
                 }
 
-                File.WriteAllText(
-                    RootPath.Value,
-                    Result,
-                    Encoding.UTF8);
+                FileUtilities.SaveTextToFileAsUtf8Bom(RootPath.Value, Result);
             }
 
             Console.WriteLine("Hello World!");

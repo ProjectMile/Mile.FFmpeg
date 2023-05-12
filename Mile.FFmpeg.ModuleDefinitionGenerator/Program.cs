@@ -129,9 +129,6 @@ namespace Mile.FFmpeg.ModuleDefinitionGenerator
             List<KeyValuePair<string, string>> RootPaths = new List<KeyValuePair<string, string>>
             {
                 new KeyValuePair<string, string>(
-                     ProjectRootPath + @"\Mile.FFmpeg.Vcpkg\packages\ffmpeg_arm-windows-static-release\lib\",
-                     ProjectRootPath + @"\Mile.FFmpeg\Mile.FFmpeg.ARM.def"),
-                new KeyValuePair<string, string>(
                     ProjectRootPath + @"\Mile.FFmpeg.Vcpkg\packages\ffmpeg_arm64-windows-static-release\lib\",
                     ProjectRootPath + @"\Mile.FFmpeg\Mile.FFmpeg.ARM64.def"),
                 new KeyValuePair<string, string>(

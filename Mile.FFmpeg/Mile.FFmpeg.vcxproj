@@ -2,7 +2,6 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x86.props" />
   <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x64.props" />
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.ARM.props" />
   <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.ARM64.props" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>{360A29AE-EDF8-4F58-A13C-878316CBDE13}</ProjectGuid>
@@ -38,7 +37,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="Mile.FFmpeg.ARM.def" />
     <None Include="Mile.FFmpeg.ARM64.def" />
     <None Include="Mile.FFmpeg.nuspec" />
     <None Include="Mile.FFmpeg.targets" />

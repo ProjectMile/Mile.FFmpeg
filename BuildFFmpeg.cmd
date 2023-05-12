@@ -36,8 +36,6 @@ vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:x86-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:x64-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
-vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:arm-windows-static-release
-if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 vcpkg install %VcpkgOptions% ffmpeg[%FFmpegFeatures%]:arm64-windows-static-release
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 

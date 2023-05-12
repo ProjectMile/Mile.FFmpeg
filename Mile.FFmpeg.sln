@@ -11,21 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mile.FFmpeg.ModuleDefinitio
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Release|ARM = Release|ARM
 		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|ARM.ActiveCfg = Release|ARM
-		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|ARM.Build.0 = Release|ARM
 		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|ARM64.ActiveCfg = Release|ARM64
 		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|ARM64.Build.0 = Release|ARM64
 		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|x64.ActiveCfg = Release|x64
 		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|x64.Build.0 = Release|x64
 		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|x86.ActiveCfg = Release|Win32
 		{360A29AE-EDF8-4F58-A13C-878316CBDE13}.Release|x86.Build.0 = Release|Win32
-		{9F7F2D3B-9238-4B8C-B117-4AEF00A98B77}.Release|ARM.ActiveCfg = Debug|Any CPU
 		{9F7F2D3B-9238-4B8C-B117-4AEF00A98B77}.Release|ARM64.ActiveCfg = Debug|Any CPU
 		{9F7F2D3B-9238-4B8C-B117-4AEF00A98B77}.Release|x64.ActiveCfg = Debug|Any CPU
 		{9F7F2D3B-9238-4B8C-B117-4AEF00A98B77}.Release|x64.Build.0 = Debug|Any CPU

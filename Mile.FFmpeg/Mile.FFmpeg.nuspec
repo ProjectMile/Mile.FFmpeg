@@ -28,9 +28,6 @@
     <file src="..\Output\Binaries\Release\x64\*.dll" target="build\native\Redist\x64"/>
     <file src="..\Output\Binaries\Release\x64\*.lib" target="build\native\Lib\x64"/>
 
-    <file src="..\Output\Binaries\Release\ARM\*.dll" target="build\native\Redist\ARM"/>
-    <file src="..\Output\Binaries\Release\ARM\*.lib" target="build\native\Lib\ARM"/>
-
     <file src="..\Output\Binaries\Release\ARM64\*.dll" target="build\native\Redist\ARM64"/>
     <file src="..\Output\Binaries\Release\ARM64\*.lib" target="build\native\Lib\ARM64"/>
 

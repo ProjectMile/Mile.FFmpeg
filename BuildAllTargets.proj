@@ -5,7 +5,7 @@
   <Target Name="Restore">
     <ItemGroup>
       <ProjectReference Include="$(MSBuildThisFileDirectory)Mile.FFmpeg.sln">
-        <AdditionalProperties>Configuration=Release;Platform=x86</AdditionalProperties>   
+        <AdditionalProperties>Configuration=Release;Platform=x64</AdditionalProperties>   
       </ProjectReference>
     </ItemGroup>
     <MSBuild

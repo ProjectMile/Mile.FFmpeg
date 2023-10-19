@@ -1,5 +1,13 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 6.0.0.0**
+
+- Upgrade FFmpeg to 6.0.
+- Update vcpkg to 2023.10.19 release.
+- Update to the newest of Mile.Project.Helpers.
+- Remove ARM32 target support.
+- Simplify the build script logic.
+
 **Mile.FFmpeg 5.1.2.0**
 
 - Upgrade FFmpeg to 5.1.2.

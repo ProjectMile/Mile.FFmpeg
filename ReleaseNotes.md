@@ -4,6 +4,7 @@
 
 - Upgrade FFmpeg to 6.1.
 - Update vcpkg to 2023.11.20 release.
+- Extend the NuGet package platform support.
 
 **Mile.FFmpeg 6.0.0.0**
 

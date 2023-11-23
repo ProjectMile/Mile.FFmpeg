@@ -18,6 +18,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="file">build\native\License.md</license>
     <readme>build\native\ReadMe.md</readme>
+    <dependencies>
+      <group targetFramework="native0.0" />
+      <group targetFramework="uap10.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
     <repository type="git" url="https://github.com/ProjectMile/Mile.FFmpeg.git" />
   </metadata>
   <files>
@@ -40,6 +45,12 @@
     <file src="..\Mile.FFmpeg.Vcpkg\installed\x64-windows-static-release\include\libswscale\**\*.h" target="build\native\Include\libswscale" />
 
     <file src="Mile.FFmpeg.targets" target="build\native"/>
+    <file src="Mile.FFmpeg.Managed.targets" target="build\netstandard2.0\Mile.FFmpeg.targets"/>
+    <file src="Mile.FFmpeg.Managed.targets" target="build\uap10.0\Mile.FFmpeg.targets"/>
+
+    <file src="_._" target="lib\native" />
+    <file src="_._" target="lib\netstandard2.0" />
+    <file src="_._" target="lib\uap10.0" />
 
     <file src="..\ReadMe.md" target="build\native"/>
     <file src="..\License.md" target="build\native"/>

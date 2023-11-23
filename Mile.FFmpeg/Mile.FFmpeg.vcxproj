@@ -38,10 +38,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="Mile.FFmpeg.ARM64.def" />
+    <None Include="Mile.FFmpeg.Managed.targets" />
     <None Include="Mile.FFmpeg.nuspec" />
     <None Include="Mile.FFmpeg.targets" />
     <None Include="Mile.FFmpeg.Win32.def" />
     <None Include="Mile.FFmpeg.x64.def" />
+    <None Include="_._" />
   </ItemGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
   <Import Project="..\Mile.FFmpeg.Vcpkg\scripts\buildsystems\msbuild\vcpkg.targets" />

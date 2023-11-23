@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:   Mouri Internal Library Essentials
+  FILE:      Mile.FFmpeg.Managed.targets
+  PURPOSE:   MSBuild targets file for Mile.FFmpeg
+
+  LICENSE:   The MIT License
+
+  MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MileFFmpegRedistPath>$(MSBuildThisFileDirectory)..\native\Redist\$(PlatformTarget)\</MileFFmpegRedistPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ReferenceCopyLocalPaths Include="$(MileFFmpegRedistPath)*.*" />
+  </ItemGroup>
+</Project>

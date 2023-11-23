@@ -54,6 +54,8 @@ av_mediacodec_default_free
 av_mediacodec_default_init
 av_mediacodec_release_buffer
 av_mediacodec_render_buffer_at_time
+avpriv_kbd_window_init
+avpriv_kbd_window_init_fixed
 av_jni_get_java_vm
 av_jni_set_java_vm
 avcodec_find_best_pix_fmt_of_list
@@ -124,7 +126,12 @@ av_packet_pack_dictionary
 av_packet_ref
 av_packet_rescale_ts
 av_packet_shrink_side_data
+av_packet_side_data_add
+av_packet_side_data_free
+av_packet_side_data_get
 av_packet_side_data_name
+av_packet_side_data_new
+av_packet_side_data_remove
 av_packet_unpack_dictionary
 av_packet_unref
 av_shrink_packet
@@ -138,6 +145,11 @@ av_fft_calc
 av_fft_end
 av_fft_init
 av_fft_permute
+av_imdct_calc
+av_imdct_half
+av_mdct_calc
+av_mdct_end
+av_mdct_init
 av_rdft_calc
 av_rdft_end
 av_rdft_init
@@ -407,6 +419,8 @@ av_xtea_le_init
 avpriv_cga_font
 avpriv_vga16_font
 avpriv_emms_asm
+av_video_hint_alloc
+av_video_hint_create_side_data
 av_video_enc_params_alloc
 av_video_enc_params_create_side_data
 av_util_ffversion
@@ -518,6 +532,7 @@ av_q2intfloat
 av_reduce
 av_sub_q
 av_get_random_seed
+av_random_bytes
 av_pixelutils_get_sad_fn
 av_chroma_location_enum_to_pos
 av_chroma_location_from_name
@@ -644,6 +659,7 @@ av_md5_size
 av_md5_sum
 av_md5_update
 av_add_stable
+av_bessel_i0
 av_compare_mod
 av_compare_ts
 av_gcd
@@ -737,6 +753,8 @@ av_dynamic_hdr_vivid_alloc
 av_dynamic_hdr_vivid_create_side_data
 av_dynamic_hdr_plus_alloc
 av_dynamic_hdr_plus_create_side_data
+av_dynamic_hdr_plus_from_t35
+av_dynamic_hdr_plus_to_t35
 av_hash_alloc
 av_hash_final
 av_hash_final_b64
@@ -764,6 +782,7 @@ av_frame_new_side_data
 av_frame_new_side_data_from_buf
 av_frame_ref
 av_frame_remove_side_data
+av_frame_replace
 av_frame_side_data_name
 av_frame_unref
 avpriv_float_dsp_alloc
@@ -804,6 +823,9 @@ av_fifo_size
 av_fifo_space
 av_fifo_write
 av_fifo_write_from_cb
+av_executor_alloc
+av_executor_execute
+av_executor_free
 av_expr_count_func
 av_expr_count_vars
 av_expr_eval

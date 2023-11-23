@@ -5,7 +5,7 @@
 @rem 
 @rem LICENSE:   The MIT License
 @rem 
-@rem DEVELOPER: MouriNaruto (KurikoMouri@outlook.jp)
+@rem MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
 @rem 
 
 @setlocal

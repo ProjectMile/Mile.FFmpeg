@@ -1,5 +1,10 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 6.1.0.0**
+
+- Upgrade FFmpeg to 6.1.
+- Update vcpkg to 2023.11.20 release.
+
 **Mile.FFmpeg 6.0.0.0**
 
 - Upgrade FFmpeg to 6.0.

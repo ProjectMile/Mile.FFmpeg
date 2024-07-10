@@ -10,22 +10,15 @@
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <MileFFmpegIncludePath>$(MSBuildThisFileDirectory)Include\</MileFFmpegIncludePath>
-    <MileFFmpegLibraryPath>$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\</MileFFmpegLibraryPath>
-    <MileFFmpegRedistPath>$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\</MileFFmpegRedistPath>
+    <IncludePath>$(MSBuildThisFileDirectory)Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildThisFileDirectory)Lib\$(PlatformTarget)\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemGroup>
-    <ReferenceCopyLocalPaths Include="$(MileFFmpegRedistPath)*.*" />
+    <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)Redist\$(PlatformTarget)\*.*" />
   </ItemGroup>
   <ItemDefinitionGroup>
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(MileFFmpegIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <ResourceCompile>
-      <AdditionalIncludeDirectories>$(MileFFmpegIncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
     <Link>
-      <AdditionalDependencies>$(MileFFmpegLibraryPath)Mile.FFmpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Mile.FFmpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
 </Project>

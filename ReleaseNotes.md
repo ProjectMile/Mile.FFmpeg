@@ -1,10 +1,5 @@
 ﻿# Mile.FFmpeg Release Notes
 
-**Mile.FFmpeg 7.1.0.0**
-
-- Upgrade FFmpeg to 7.1.
-- Update vcpkg to 2025.02.14 release.
-
 **Mile.FFmpeg 6.1.0.0**
 
 - Upgrade FFmpeg to 6.1.

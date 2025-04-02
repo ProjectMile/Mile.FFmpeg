@@ -1,5 +1,14 @@
 ﻿# Mile.FFmpeg Release Notes
 
+**Mile.FFmpeg 7.1.1.0**
+
+- Upgrade FFmpeg to 7.1.1. (Also thanks to MiroKaku's FFmpeg 7.1 contributions.)
+- Update vcpkg to 2025.03.19 release.
+- Compile FFmpeg and related third-party libraries via vcpkg with all LGPL
+  features enabled.
+- Migrate from Mile.Project.Windows to Mile.Project.Configurations.
+- Simplify the toolchain implementation.
+
 **Mile.FFmpeg 7.1.0.0**
 
 - Upgrade FFmpeg to 7.1.

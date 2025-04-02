@@ -9,11 +9,8 @@ Mile.FFmpeg is the merged FFmpeg dynamic linked library for the Windows.
 ## Features
 
 - Based on the latest FFmpeg source code tree from vcpkg.
-- Compile FFmpeg and related third-party libraries via vcpkg with aom, ass, 
-  avcodec, avdevice, avfilter, avformat, bzip2, dav1d, fontconfig, freetype, 
-  fribidi, iconv, ilbc, lzma, modplug, mp3lame, openh264, openjpeg, opus, 
-  snappy, soxr, speex, srt, swresample, swscale, theora, vorbis, vpx, webp, 
-  xml2 and zlib enabled.
+- Compile FFmpeg and related third-party libraries via vcpkg with all LGPL
+  features enabled.
 - Use [VC-LTL 5.x](https://github.com/Chuyu-Team/VC-LTL5) toolchain to make the
   binary size smaller.
 - Provide NuGet package.

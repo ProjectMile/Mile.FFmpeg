@@ -12,7 +12,7 @@
     <MileProjectLegalCopyright>© Project Mile. All rights reserved.</MileProjectLegalCopyright>
     <MileProjectOriginalFilename>Mile.FFmpeg.dll</MileProjectOriginalFilename>
     <MileProjectProductName>Mile.FFmpeg</MileProjectProductName>
-    <MileProjectVersion>7.1.0.0</MileProjectVersion>
+    <MileProjectVersion>7.1.1.0</MileProjectVersion>
     <MileProjectVersionTag Condition="false">Alpha 1</MileProjectVersionTag>
   </PropertyGroup>
   <Import Sdk="Mile.Project.Configurations" Version="1.0.1426" Project="Mile.Project.Platform.x86.props" />

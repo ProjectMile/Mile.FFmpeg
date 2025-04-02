@@ -32,7 +32,7 @@
   <Import Project="..\Mile.FFmpeg.Vcpkg\scripts\buildsystems\msbuild\vcpkg.props" />
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>bcrypt.lib;mfplat.lib;mfuuid.lib;secur32.lib;shlwapi.lib;strmiids.lib;vfw32.lib;ws2_32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>bcrypt.lib;mfplat.lib;mfuuid.lib;secur32.lib;shlwapi.lib;strmiids.lib;vfw32.lib;ws2_32.lib;crypt32.lib;cfgmgr32.lib;imm32.lib;setupapi.lib;version.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>Mile.FFmpeg.$(Platform).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>

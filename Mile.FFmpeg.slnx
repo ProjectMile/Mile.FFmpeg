@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Release" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/MaintainerTools/">
+    <Project Path="Mile.FFmpeg.ModuleDefinitionGenerator/Mile.FFmpeg.ModuleDefinitionGenerator.csproj">
+      <BuildType Project="Debug" />
+      <Build Solution="*|ARM64" Project="false" />
+      <Build Solution="*|x86" Project="false" />
+    </Project>
+  </Folder>
+  <Project Path="Mile.FFmpeg/Mile.FFmpeg.vcxproj" Id="360a29ae-edf8-4f58-a13c-878316cbde13" />
+</Solution>

@@ -2,9 +2,12 @@
 <Project 
   DefaultTargets="Restore;Build;Packaging"
   xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SolutionPath>$(MSBuildThisFileDirectory)Mile.FFmpeg.slnx</SolutionPath>
+  </PropertyGroup>
   <Target Name="Restore">
     <ItemGroup>
-      <ProjectReference Include="$(MSBuildThisFileDirectory)Mile.FFmpeg.sln">
+      <ProjectReference Include="$(SolutionPath)">
         <AdditionalProperties>Configuration=Release;Platform=x64</AdditionalProperties>   
       </ProjectReference>
     </ItemGroup>
@@ -16,13 +19,13 @@
   </Target>
   <Target Name="Build">
     <ItemGroup>
-      <ProjectReference Include="$(MSBuildThisFileDirectory)Mile.FFmpeg.sln">
+      <ProjectReference Include="$(SolutionPath)">
         <AdditionalProperties>Configuration=Release;Platform=x86</AdditionalProperties>   
       </ProjectReference>
-      <ProjectReference Include="$(MSBuildThisFileDirectory)Mile.FFmpeg.sln">
+      <ProjectReference Include="$(SolutionPath)">
         <AdditionalProperties>Configuration=Release;Platform=x64</AdditionalProperties>   
       </ProjectReference>
-      <ProjectReference Include="$(MSBuildThisFileDirectory)Mile.FFmpeg.sln">
+      <ProjectReference Include="$(SolutionPath)">
         <AdditionalProperties>Configuration=Release;Platform=ARM64</AdditionalProperties>   
       </ProjectReference>
     </ItemGroup>
